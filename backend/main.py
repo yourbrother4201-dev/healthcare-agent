@@ -69,7 +69,7 @@ app = FastAPI(
         "logged-in user. This is an informational tool, not a medical device."
     ),
     version="1.0.0",
-    openapi_tags=tags_metadata,,
+    openapi_tags=tags_metadata,
 )
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
