@@ -6,7 +6,7 @@ import WellnessTracker from "./WellnessTracker";
 import VoiceButton from "./VoiceButton";
 import LabelScanner from "./LabelScanner";
 
-const API = (import.meta.env.VITE_API_URL || "http://127.0.0.1:8000").replace(/\/$/, "");
+const API = (import.meta.env.VITE_API_URL || "https://health-monitoring-backend-rssn.onrender.com").replace(/\/$/, "");
 
 const apiFetch = (path, options = {}, token) => {
   const headers = new Headers(options.headers || {});

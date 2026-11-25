@@ -5,7 +5,7 @@ import "./WellnessTracker.css";
 // Week 5-6 (Track A, Option A2): Medication & Wellness Tracker UI.
 // Self-contained: it only needs the login token from App.jsx.
 
-const API = "http://127.0.0.1:8000";
+const API = (import.meta.env.VITE_API_URL || "https://health-monitoring-backend-rssn.onrender.com").replace(/\/$/, "");
 
 async function request(token, path, options = {}) {
   const headers = { Authorization: `Bearer ${token}` };

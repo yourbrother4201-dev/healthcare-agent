@@ -1,7 +1,7 @@
 //Auth.jsx
 import { useState } from "react";
 
-const API = (import.meta.env.VITE_API_URL || "http://127.0.0.1:8000").replace(/\/$/, "");
+const API = (import.meta.env.VITE_API_URL || "https://health-monitoring-backend-rssn.onrender.com").replace(/\/$/, "");
 
 export default function Auth({ onLogin }) {
   const [mode, setMode] = useState("login");
